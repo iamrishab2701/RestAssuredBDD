@@ -11,3 +11,10 @@ Feature: Validating Place API's
     | Name    | Language | Address            |
     | AAHouse | English  | World Cross Center |
 #   | BBHouse | German   | Sea Cross Center   |
+
+
+  Scenario: Verify if Delete Place functionality is working
+    Given DeletePlace Payload
+    When User calls "deletePlaceAPI" with "Delete" http request
+    Then the API call got success with status code 200
+    And "status" in response body is "OK"

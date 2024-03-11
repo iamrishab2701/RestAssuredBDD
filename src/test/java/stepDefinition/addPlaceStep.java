@@ -59,4 +59,9 @@ public class addPlaceStep extends Utils {
         String actualName = getJsonPath(response, "name");
         Assert.assertEquals(name,actualName);
     }
+
+    @Given("DeletePlace Payload")
+    public void deleteplacePayload() {
+        //given().spec(requestSpecification().body(deleteplacePayload();))
+    }
 }

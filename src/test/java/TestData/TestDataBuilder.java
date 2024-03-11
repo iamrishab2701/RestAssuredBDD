@@ -2,14 +2,14 @@ package TestData;
 
 import Pojo.AddPlacePojo.AddPlacePayload;
 import Pojo.AddPlacePojo.Location;
+import Pojo.DeletePlacePojo.deletePlacePayload;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestDataBuilder {
 
-    public AddPlacePayload addPlaceLoad(String name, String language, String address)
-    {
+    public AddPlacePayload addPlaceLoad(String name, String language, String address) {
         AddPlacePayload addPlacePayload = new AddPlacePayload();
         Location location = new Location();
         addPlacePayload.setAccuracy(50);
@@ -28,5 +28,12 @@ public class TestDataBuilder {
         location.setLng(32.876);
         addPlacePayload.setLocation(location);
         return addPlacePayload;
+    }
+
+    public String deletePlacePayload(String place_id)
+    {
+        return "{\n" +
+                "    \"place_id\": \""+place_id+"\"\n" +
+                "}";
     }
 }
