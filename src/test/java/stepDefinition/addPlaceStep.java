@@ -21,7 +21,7 @@ import static io.restassured.RestAssured.given;
 
 public class addPlaceStep extends Utils {
     RequestSpecification res;
-    Response response;
+    static Response response;
     TestDataBuilder dataBuilder = new TestDataBuilder();
 
     static String place_id;

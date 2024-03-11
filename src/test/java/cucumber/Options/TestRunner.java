@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = {"stepDefinition"},
         plugin = {"pretty"},
         monochrome = true,
-        dryRun = false
+        dryRun = false,
+        tags = ""
 )
 
 public class TestRunner {
