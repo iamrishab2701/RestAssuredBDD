@@ -24,6 +24,8 @@ public class addPlaceStep extends Utils {
     Response response;
     TestDataBuilder dataBuilder = new TestDataBuilder();
 
+    static String place_id;
+
     @Given("Add AddPlace payload with {string}, {string} and {string}")
     public void addAddPlacePayloadWithAnd(String name, String language, String address) throws IOException {
         res = given().spec(requestSpecification()).body(dataBuilder.addPlaceLoad(name,language,address));
@@ -53,7 +55,7 @@ public class addPlaceStep extends Utils {
 
     @And("Verify place_Id created maps to {string} using {string}")
     public void verifyPlace_IdCreatedMapsToUsing(String name, String APIName) throws IOException {
-        String place_id = getJsonPath(response, "place_id");
+        place_id = getJsonPath(response, "place_id");
         res = given().spec(requestSpecification()).queryParam("place_id",place_id);
         userCallsWithHttpRequest(APIName, "GET");
         String actualName = getJsonPath(response, "name");
@@ -61,7 +63,7 @@ public class addPlaceStep extends Utils {
     }
 
     @Given("DeletePlace Payload")
-    public void deleteplacePayload() {
-        //given().spec(requestSpecification().body(deleteplacePayload();))
+    public void deletePlacePayload() throws IOException {
+        res = given().spec(requestSpecification().body(dataBuilder.deletePlacePay(place_id)));
     }
 }

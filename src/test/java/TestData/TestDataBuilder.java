@@ -2,7 +2,6 @@ package TestData;
 
 import Pojo.AddPlacePojo.AddPlacePayload;
 import Pojo.AddPlacePojo.Location;
-import Pojo.DeletePlacePojo.deletePlacePayload;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +29,7 @@ public class TestDataBuilder {
         return addPlacePayload;
     }
 
-    public String deletePlacePayload(String place_id)
+    public String deletePlacePay(String place_id)
     {
         return "{\n" +
                 "    \"place_id\": \""+place_id+"\"\n" +
