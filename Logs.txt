@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Mon, 11 Mar 2024 19:10:57 GMT
+Date: Mon, 11 Mar 2024 19:28:50 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "b809720f7dc9702c65992a5381b0ae30",
+    "place_id": "b7ddb094a7d77fe19e95f0d38950a860",
     "scope": "APP",
-    "reference": "dcda1f89302d397ab9c3f109e7c0c7abdcda1f89302d397ab9c3f109e7c0c7ab",
-    "id": "dcda1f89302d397ab9c3f109e7c0c7ab"
+    "reference": "a1ccf4f20260b327d506d78ffb87c3c4a1ccf4f20260b327d506d78ffb87c3c4",
+    "id": "a1ccf4f20260b327d506d78ffb87c3c4"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=b809720f7dc9702c65992a5381b0ae30
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=b7ddb094a7d77fe19e95f0d38950a860
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=b809720f7dc9702c65992a5381b0ae30
+				place_id=b7ddb094a7d77fe19e95f0d38950a860
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Mon, 11 Mar 2024 19:10:57 GMT
+Date: Mon, 11 Mar 2024 19:28:51 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -84,6 +84,91 @@ Content-Type: application/json;charset=UTF-8
     "language": "English"
 }
 Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "BBHouse",
+    "phone_number": "(+91) 4383638561",
+    "address": "Sea Cross Center",
+    "website": "https://rahulshettyacademy.com",
+    "language": "German",
+    "location": {
+        "lat": -39.897,
+        "lng": 32.876
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Mon, 11 Mar 2024 19:28:52 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "7481534d0a40b1e89c28ec7f0ba505e2",
+    "scope": "APP",
+    "reference": "d6c0e9b83464e2f9a1ea0d9e41fd7605d6c0e9b83464e2f9a1ea0d9e41fd7605",
+    "id": "d6c0e9b83464e2f9a1ea0d9e41fd7605"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7481534d0a40b1e89c28ec7f0ba505e2
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=7481534d0a40b1e89c28ec7f0ba505e2
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Mar 2024 19:28:53 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 242
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-39.897",
+        "longitude": "32.876"
+    },
+    "accuracy": "50",
+    "name": "BBHouse",
+    "phone_number": "(+91) 4383638561",
+    "address": "Sea Cross Center",
+    "types": "shoe park,shop",
+    "website": "https://rahulshettyacademy.com",
+    "language": "German"
+}
+Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
 Proxy:			<none>
 Request params:	<none>
@@ -96,10 +181,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "b809720f7dc9702c65992a5381b0ae30"
+    "place_id": "7481534d0a40b1e89c28ec7f0ba505e2"
 }
 HTTP/1.1 200 OK
-Date: Mon, 11 Mar 2024 19:10:58 GMT
+Date: Mon, 11 Mar 2024 19:28:53 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
